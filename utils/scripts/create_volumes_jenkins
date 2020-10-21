@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Create the data volume
+sudo docker volume create jenkins-data
+
+# Create the log volume
+sudo docker volume create jenkins-log
+
+# Show results
+sudo docker volume ls

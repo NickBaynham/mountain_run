@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo docker container stop jenkins-master
+# sudo docker container rm jenkins-master
+

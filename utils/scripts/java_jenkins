@@ -1,0 +1,1 @@
+sudo docker exec jenkins-master ps -ef | grep java

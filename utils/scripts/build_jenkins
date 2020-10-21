@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo docker image rm jenkins-mr
+cd /home/nick/projects/mountain_run/workspace/mountain_run/utils/docker/jenkins
+sudo docker build . --tag jenkins-mr

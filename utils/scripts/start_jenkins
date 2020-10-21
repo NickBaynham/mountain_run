@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo docker run -d \
+	--name jenkins-master \
+	--mount source=jenkins-log,target=/var/log/jenkins \
+	--mount source=jenkins-data,target=/var/jenkins_home \
+	-p 8089:8080 -p 50009:50000 \
+	-v jenkins_master_home:/var/jenkins_home jenkins-mr
+./java_jenkins
