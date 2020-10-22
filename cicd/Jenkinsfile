@@ -3,13 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       agent {
-        docker {
-          image 'python2:-alpine'
-        }
       }
       steps {
         sh 'python -m py_compile sources/mountain_run.py'
-        stash(name: 'compiled-results', includes: 'sources/*.py*')
       }  
     }
   }
